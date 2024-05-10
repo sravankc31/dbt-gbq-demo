@@ -1,0 +1,1 @@
+select * from {{ source('sravan', 'ord_items') }}

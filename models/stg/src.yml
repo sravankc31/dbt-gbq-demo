@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: sravan
+    schema: thelook_ecommerce
+    tables:
+      - name: ord_items
+        identifier: order_items
