@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: sravan
+    database: bigquery-public-data
     schema: thelook_ecommerce
     tables:
       - name: ord_items
@@ -9,8 +10,8 @@ sources:
         loaded_at_field: created_at
         freshness: 
           error_after:
-            count: 2
-            period: day
+            count: 1
+            period: hour
           warn_after:
             count: 1
             period: hour

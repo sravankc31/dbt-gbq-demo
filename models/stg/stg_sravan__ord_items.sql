@@ -1,5 +1,6 @@
 with 
-
+-- --source_name: The name: defined under a sources: key
+-- table_name: The name: defined under a tables: key
 source as (
 
     select * from {{ source('sravan', 'ord_items') }}
@@ -8,7 +9,7 @@ source as (
 
 renamed as (
 
-    select
+    select *
 
     from source
 

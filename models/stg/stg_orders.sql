@@ -1,1 +1,1 @@
-select * from {{ source('sravan', 'ord_items') }}
+select * from bigquery-public-data.thelook_ecommerce.order_items
