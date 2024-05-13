@@ -7,4 +7,9 @@ models:
         tests:
           - unique
           - not_null
-          
+  - name: stg_products
+    columns:
+      - name: category
+        tests:
+          - accepted_values:
+              values: ['Accessories','Plus']
