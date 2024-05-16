@@ -40,5 +40,8 @@ models:
     # Applies to all files under models/example/
     dim:
       +materialized: table
+      +schema: dim
     stg:
       +materialized: table
+      +schema: stg
+    
