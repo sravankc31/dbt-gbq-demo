@@ -1,1 +1,6 @@
-select * from bigquery-public-data.thelook_ecommerce.order_items
+{{
+    config(
+        schema='test2'
+    )
+}}
+select * from {{ source('raw', 'ord_items') }}

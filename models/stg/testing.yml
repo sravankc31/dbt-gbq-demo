@@ -13,3 +13,4 @@ models:
         tests:
           - accepted_values:
               values: ['Accessories','Plus']
+ 

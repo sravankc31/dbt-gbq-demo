@@ -3,7 +3,7 @@ with
 -- table_name: The name: defined under a tables: key
 source as (
 
-    select * from {{ source('sravan', 'ord_items') }}
+    select * from {{ source('raw', 'ord_items') }}
 
 ),
 

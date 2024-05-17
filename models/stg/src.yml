@@ -1,9 +1,10 @@
 version: 2
 
 sources:
-  - name: sravan
+  - name: raw
     database: bigquery-public-data
-    schema: thelook_ecommerce
+    schema: the_look
+   
     tables:
       - name: ord_items
         identifier: order_items
