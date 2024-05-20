@@ -42,6 +42,9 @@ models:
       +materialized: table
       +schema: dim
     stg:
+      +enabled: true
       +materialized: table
       +schema: stg
+      stg_orders:
+        +enabled: true
     
