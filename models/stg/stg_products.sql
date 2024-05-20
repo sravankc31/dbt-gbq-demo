@@ -1,1 +1,1 @@
-select * from bigquery-public-data.thelook_ecommerce.products
+select * from {{ source('raw', 'products') }}

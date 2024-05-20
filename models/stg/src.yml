@@ -2,18 +2,23 @@ version: 2
 
 sources:
   - name: raw
-    database: bigquery-public-data
-    schema: the_look
+    database: ornate-time-422208-r0
+    schema: dbt_skumar
+    freshness: 
+          error_after:
+            count: 2
+            period: hour
+          warn_after:
+            count: 1
+            period: minute
    
     tables:
       - name: ord_items
         identifier: order_items
         loaded_at_field: created_at
-        freshness: 
-          error_after:
-            count: 1
-            period: hour
-          warn_after:
-            count: 1
-            period: hour
+      - name: products
+        freshness: null
+         
+        
+        
         
