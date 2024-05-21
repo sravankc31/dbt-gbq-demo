@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: raw
+    database: ornate-time-422208-r0
+    schema: dbt_skumar
+    freshness: 
+          error_after:
+            count: 2
+            period: hour
+          warn_after:
+            count: 1
+            period: minute
+   
+    tables:
+      - name: ord_items
+        identifier: order_items
+        loaded_at_field: created_at
+      - name: products
+        freshness: null
+         
+        
+        
+        
