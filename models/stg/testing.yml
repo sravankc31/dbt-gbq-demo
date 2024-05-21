@@ -4,13 +4,13 @@ models:
   - name: stg_orders
     columns:
       - name: id
-        tests:
+        data_tests:
           - unique
           - not_null
   - name: stg_products
     columns:
       - name: category
-        tests:
+        data_tests:
           - accepted_values:
               values: ['Accessories','Plus']
  
