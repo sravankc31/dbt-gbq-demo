@@ -7,10 +7,14 @@ models:
         data_tests:
           - unique
           - not_null
+      - name: order_id
+        data_tests:
+          - dummypositive_value
   - name: stg_products
     columns:
       - name: category
         data_tests:
           - accepted_values:
               values: ['Accessories','Plus']
+    
  
