@@ -1,2 +1,2 @@
-{#added commen2222t#}
+----ggg
 select * from {{ source('raw', 'ord_items') }}
