@@ -6,4 +6,4 @@ id ,
  status ,
   created_at from {{ source('raw', 'ord_items') }}
 
-  ---pkg
+  ---pkgkkk
